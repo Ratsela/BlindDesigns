@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/jquery.mobile-1.4.2.min.css">
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/jquery.mobile-1.4.2.min.css">
+	<style type="text/css">
+		.slider{
+			width:400px;
+			height:350px;
+			overflow:hidden;
+			margin:30px auto;
+		}
+		.shadow{
+			background-image:url(img/wideshadow.png);
+			background-repeat:no-repeat;
+			background-position:top;
+			width:400px;
+			height:144px;
+			margin:-60px auto;
+		}
+		.slider img{
+			width:400px;
+			height:350px;
+			display:none;
+		}
+	</style>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/slider.js"></script>
 </head>
 <body>
 
@@ -29,11 +52,24 @@
     </ul>
     </div>
   </div>
-
-  <div data-role="footer">
+	
+	<div class="slider" id="slider">
+		<img id="1" src="img/bamboo150valance.jpg">
+		<img id="2" src="img/bambooblindhalfroundvalance.jpg">
+		<img id="3" src="img/basswood.jpg">
+		<img id="4" src="img/basswoodblind.jpg">
+		<img id="5" src="img/basswoodhalfroundvalance.jpg">
+		<img id="6" src="img/basswoodregency.jpg">
+		<img id="7" src="img/basswoodtradional.jpg">
+		<img id="8" src="img/basswood-traditional-valance.jpg">
+		<img id="9" src="img/basswood-venetian.jpg">
+	</div>
+	<div class="shadow"></div>
+ 
+</div> 
+ <div data-role="footer">
     <h1>Footer Text</h1>
   </div>
-</div> 
 
 </body>
 </html>
