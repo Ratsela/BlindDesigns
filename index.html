@@ -23,6 +23,7 @@
 			height:300px;
 			display:none;
 		}
+		
 	</style>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>
@@ -38,12 +39,12 @@
 
   <div data-role="main" class="ui-content">
     <!--<h2>Popup List</h2>-->
-    <a href="#myPopup" background-color="#8B4513" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ui-btn-icon-left">Main Menu</a>
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ui-btn-icon-left">Main Menu</a>
 
-    <div data-role="popup" id="myPopup">
+    <div data-role="popup" id="myPopup" class="myPopup">
       <ul data-role="listview" data-inset="true" style="min-width:250px;">
         <li data-role="list-divider">Select Item</li>
-        <li><a href="visualizer.html">Visualizer</a></li>
+        <li><a href="area.html">Visualizer</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Safety</a></li>
         <li><a href="#">Contact Us</a></li>
