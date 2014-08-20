@@ -4,7 +4,7 @@
 header h3{
 	color:#fff;
 	text-align:center;
-	padding-top:3px;
+	padding-top:20px;
 	padding-bottom:3px;
 	font-size:16px;
 	word-spacing:1px;
@@ -32,7 +32,7 @@ header h3{
 	text-decoration:none;
 }
 .gcontainer{
-	width:700px;
+	width:800px;
 	margin:0px auto 0;
 	border-width:0;
 	overflow:visible;
@@ -45,15 +45,13 @@ header{
 }
 #gal_content{
 	background:#848c9c;
-	background:linear-gradient(to top,#848c9c 0%,#687080 50%,#a7b1c5);
-	background:-webkit-linear-gradient(to top,#848c9c 0%,#687080 50%,#a7b1c5);
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:5px;
+	padding-bottom:5px;
 	overflow:hidden;
 	
 }
 .gallery{
-	width:528px;
+	width:100%;
 	margin:auto;
 }
 .gallery ul{
@@ -61,13 +59,12 @@ header{
 }
 .gallery li{
 	float:left;
-	margin:10px;
+	margin:5px;
 }
 .gallery img{
 	display:block;
-	padding:5px;
+	padding:3px;
 	background:#42517f;
-	border:1px solid #99adeb;
 	height:80px;
 	width:80px;
 }
