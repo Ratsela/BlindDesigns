@@ -2,7 +2,7 @@ sliderInt=1;
 sliderNext=2;
 count = $("#main_area >img").size();
 $(document).ready(function(){
-$("#main_area > img#1").fadeIn(1000);
+$("#main_area > img#1").fadeIn(600);
 	//startSlider();
 });
 function startSlider(){
@@ -15,8 +15,8 @@ function startSlider(){
 		sliderInt=1;
 	}
 					
-	$("#main_area >img").fadeOut(1000);
-	$("#main_area >img#" + sliderNext).fadeIn(1000);
+	$("#main_area >img").fadeOut(600);
+	$("#main_area >img#" + sliderNext).fadeIn(600);
 	sliderInt = sliderNext;
 	sliderNext = sliderNext + 1;
 	},3000)
@@ -41,8 +41,8 @@ function showSlide(id){
 	else if(id < 1){
 		id = count;
 		}
-	$("#main_area >img").fadeOut(1000);
-	$("#main_area >img#" + sliderNext).fadeIn(1000);
+	$("#main_area >img").fadeOut(600);
+	$("#main_area >img#" + sliderNext).fadeIn(600);
 	sliderInt = id;
 	sliderNext = id + 1;
 	}
