@@ -3,6 +3,25 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style/jquery.mobile-1.4.2.min.css">
+		<style>
+			 ul {
+					width: 1500px;
+					height: 200px;
+					margin: 0;
+					padding: 0;
+				}
+				li {
+					float: left;
+					list-style:none;
+				}
+				ul img{
+					width:100px;
+					
+				}
+				ul img:hover{
+					border:1px solid #fff;
+				}
+		</style>
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mobile-1.4.2.min.js"></script>
 		<script src="js/areaslider.js"></script>
@@ -34,7 +53,18 @@
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prev(); return false">Previous</a>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-right" onclick="next(); return false">Next</a>
 			<header><h3>Select A Blind</h3></header>
-			<section id="gal_content">
+			<ul>
+				<li><img id="1" src="img/bamboo150valance.jpg"></li>
+				<li><img id="2" src="img/bambooblindhalfroundvalance.jpg"></li>
+				<li><img id="3" src="img/basswood.jpg"></li>
+				<li><img id="4" src="img/basswoodblind.jpg"></li>
+				<li><img id="5" src="img/basswoodhalfroundvalance.jpg"></li>
+				<li><img id="1" src="img/bamboo150valance.jpg"></li>
+				<li><img id="1" src="img/bamboo150valance.jpg"></li>
+				<li><img id="1" src="img/bamboo150valance.jpg"></li>
+				<li><img id="1" src="img/bamboo150valance.jpg"></li>
+			</ul>
+			<!--<section id="gal_content">
 				<div class="gallery">
 					<ul>
 						<li><img id="1" src="img/bamboo150valance.jpg"></li>
@@ -48,7 +78,7 @@
 						<li><img id="1" src="img/bamboo150valance.jpg"></li>
 					</ul>
 				</div>
-			</section>
+			</section>-->
 		  </div>
 
 
