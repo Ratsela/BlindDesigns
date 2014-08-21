@@ -2,8 +2,8 @@ sliderInt=1;
 sliderNext=2;
 count = $("#main_area >img").size();
 $(document).ready(function(){
-$("#main_area > img#1").fadeIn(300);
-	startSlider();
+$("#main_area > img#1").fadeIn(1000);
+	//startSlider();
 });
 function startSlider(){
 	count = $("#main_area >img").size();
@@ -15,8 +15,8 @@ function startSlider(){
 		sliderInt=1;
 	}
 					
-	$("#main_area >img").fadeOut(300);
-	$("#main_area >img#" + sliderNext).fadeIn(300);
+	$("#main_area >img").fadeOut(1000);
+	$("#main_area >img#" + sliderNext).fadeIn(1000);
 	sliderInt = sliderNext;
 	sliderNext = sliderNext + 1;
 	},3000)
@@ -33,6 +33,7 @@ function next(){
 	showSlide(newSlide);
 	}
 function showSlide(id){
+	startSlider();
 	stopLoop();
 	if(id > count){
 		id = 1;
@@ -40,8 +41,8 @@ function showSlide(id){
 	else if(id < 1){
 		id = count;
 		}
-	$("#main_area >img").fadeOut(300);
-	$("#main_area >img#" + sliderNext).fadeIn(300);
+	$("#main_area >img").fadeOut(1000);
+	$("#main_area >img#" + sliderNext).fadeIn(1000);
 	sliderInt = id;
 	sliderNext = id + 1;
 	}
