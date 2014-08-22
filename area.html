@@ -4,29 +4,98 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style/jquery.mobile-1.4.2.min.css">
 		<style>
-			 ul {
-					width: 1500px;
-					height: 200px;
-					margin: 0;
-					padding: 0;
+			.no-js nav li:hover ul { display:block; }
+			 
+			/* base nav styles */
+			nav {
+				<!--display:block;
+				margin:0 auto 20px;
+				border:1px solid #222;
+				position:relative;
+				background-color:#6a6a6a;
+				font:16px Tahoma, Sans-serif; -->
+				
+				
+				
+				
 				}
-				li {
-					float: left;
-					list-style:none;
+			nav ul {
+				padding:0;
+				margin:0;
+				
+				}
+			nav li {
+				position:relative;
+				float:left;
+				list-style-type:none;
+				<!--overflow:scroll;-->
+				}
+			nav ul:after {
+				content:".";
+				display:block;
+				height:0; clear:both;
+				visibility:hidden; 
+				}
+			nav li a {
+				display:block;
+				padding:10px 20px;
+				border-left:1px solid #999;
+				border-right:1px solid #222;
+				color:#000; 
+				text-decoration:none; 
+				}
+			nav li a:focus {
+				outline:none; 
+				text-decoration:underline; 
+				}
+			nav li:first-child a {
+				border-left:none; 
+				}
+			nav li.last a { 
+				border-right:none;
+				}
+			nav a span {
+				display:block;
+				float:right; 
+				margin-left:5px; 
+				}
+			nav ul ul {
+				display:none;
+				width:100%;
+				position:absolute;
+				left:0;
+				background:#6a6a6a; 
+				}
+			nav ul ul li {
+				float:none;
+				}
+			nav ul ul a { 
+				padding:5px 10px;
+				border-left:none;
+				border-right:none;
+				font-size:14px; }
+			nav ul ul a:hover {
+				background-color:#555;
 				}
 				ul img{
-					width:100px;
-					
+					border:2px solid #99adeb;
 				}
-				ul img:hover{
-					border:1px solid #fff;
-				}
+				.borderradius nav { -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }
+.cssgradients nav { background-image:-moz-linear-gradient(0% 22px 90deg, #222, #999); background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#999), to(#222)); }
+.boxshadow.rgba nav { -moz-box-shadow:2px 2px 2px rgba(0,0,0,.75); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,.75); box-shadow:2px 2px 2px rgba(0,0,0,.75); }
+.cssgradients nav li:hover { background-image:-moz-linear-gradient(0% 100px 90deg, #999, #222); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#555)); }
+.borderradius nav ul ul { -moz-border-radius-bottomleft:4px; -moz-border-radius-bottomright:4px; -webkit-border-bottom-left-radius:4px; -webkit-border-bottom-right-radius:4px; border-bottom-left-radius:4px; border-bottom-right-radius:4px; }
+.boxshadow.rgba nav ul ul { background-color:rgba(0,0,0,0.8); -moz-box-shadow:2px 2px 2px rgba(0,0,0,.8); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,.8); box-shadow:2px 2px 2px rgba(0,0,0,.8); }
+.rgba nav ul ul li { border-left:1px solid rgba(0,0,0,0.1); border-right:1px solid rgba(0,0,0,0.1); }
+.rgba nav ul ul a:hover { background-color:rgba(85,85,85,.9); }
+.borderradius.rgba nav ul ul li.last { border-left:1px solid rgba(0,0,0,0.1); border-bottom:1px solid rgba(0,0,0,0.1); -moz-border-radius-bottomleft:4px; -moz-border-radius-bottomright:4px; -webkit-border-bottom-left-radius:4px; -webkit-border-bottom-right-radius:4px; border-bottom-left-radius:4px; border-bottom-right-radius:4px; }
+.csstransforms ul a span { -moz-transform:rotate(-180deg);-webkit-transform:rotate(-180deg); }
 		</style>
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mobile-1.4.2.min.js"></script>
 		<script src="js/areaslider.js"></script>
 	</head>
-	<body>
+	<body class="no-js">
 
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
@@ -42,6 +111,22 @@
 
 		  <div data-role="main" class="ui-content">
 			<header><h3>Room Area</h3></header>
+			<nav>
+			<ul>
+                
+                <li>
+                    <a href="#" title="Nav Link 1">Blind</a>
+                    <ul> 
+                        <li><a href="#" title="Sub Nav Link 1"><img id="3" src="img/basswood.jpg" height="50px" width="50px"></a></li>
+                        <li><a href="#" title="Sub Nav Link 2"><img id="4" src="img/basswoodblind.jpg" height="50px" width="50px"></a></li>
+                        <li><a href="#" title="Sub Nav Link 3"><img id="5" src="img/basswoodhalfroundvalance.jpg" height="50px" width="50px"></a></li>
+                        <li><a href="#" title="Sub Nav Link 4"><img id="1" src="img/bamboo150valance.jpg" height="50px" width="50px"></a></li>
+                        <li class="last"><a href="#" title="Sub Nav Link 5"><img id="1" src="img/bamboo150valance.jpg" height="50px" width="50px"></a></li>
+                    </ul>               
+                </li>
+               
+            </ul>
+		</nav>
 			<div id="area_image" class="area_image">
 				<div id="main_area" class="main_area">
 					<img id="1" src="img/room2.jpg">
@@ -52,8 +137,8 @@
 			</div>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prev(); return false">Previous</a>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-right" onclick="next(); return false">Next</a>
-			<header><h3>Select A Blind</h3></header>
-			<!--<ul>
+			<!--<header><h3>Select A Blind</h3></header>
+			<ul>
 				<li><img id="1" src="img/bamboo150valance.jpg"></li>
 				<li><img id="2" src="img/bambooblindhalfroundvalance.jpg"></li>
 				<li><img id="3" src="img/basswood.jpg"></li>
@@ -86,6 +171,7 @@
 			<!--<h1>Blind Designs</h1>--><h1><img src="img/logo.png" height="50px"></h1>
 		  </div>
 		</div> 
-
+		<script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
 	</body>
 </html>
