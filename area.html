@@ -6,6 +6,7 @@
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mobile-1.4.2.min.js"></script>
 		<script src="js/areaslider.js"></script>
+		<script src="js/changeblind.js"></script>
 	</head>
 	<body>
 
@@ -32,79 +33,32 @@
 					<img id="4" src="img/room2.jpg">
 				</div>
 			</div>
-			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prev(); return false">Previous</a>
-			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-right" onclick="next(); return false">Next</a>
-			
-			<div class="imagelist">
-				<ul>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
-				</ul>
-			</div>
-			
-			<style>
-				.imagelist{
-					height:100px;
-				}
-				.imagelist ul{
-					<!--overflow:scroll;-->
-					width:150px;
-					height:150px;
-					overflow-x:scroll;
-					display: inline-block;
-				}
-				.imagelist ul li{
-					float:left;
-					list-style:none;
-					margin:2px;
-					margin-top:20px;
-					margin-bottom:2px;
-				}
-				.imagelist ul li img{
-					width:120px;
-					border:1px solid #000;
-				}
-				.imagelist ul li img:hover{
-					border:1px solid #fff;
-				}
-			</style>
-			
-			
-			<!--<header><h3>Select A Blind</h3></header>
-			<ul>
-				<li><img id="1" src="img/bamboo150valance.jpg"></li>
-				<li><img id="2" src="img/bambooblindhalfroundvalance.jpg"></li>
-				<li><img id="3" src="img/basswood.jpg"></li>
-				<li><img id="4" src="img/basswoodblind.jpg"></li>
-				<li><img id="5" src="img/basswoodhalfroundvalance.jpg"></li>
-				<li><img id="1" src="img/bamboo150valance.jpg"></li>
-				<li><img id="1" src="img/bamboo150valance.jpg"></li>
-				<li><img id="1" src="img/bamboo150valance.jpg"></li>
-				<li><img id="1" src="img/bamboo150valance.jpg"></li>
-			</ul>
-			<section id="gal_content">
-				<div class="gallery">
-					<ul>
-						<li><img id="1" src="img/bamboo150valance.jpg"></li>
-						<li><img id="2" src="img/bambooblindhalfroundvalance.jpg"></li>
-						<li><img id="3" src="img/basswood.jpg"></li>
-						<li><img id="4" src="img/basswoodblind.jpg"></li>
-						<li><img id="5" src="img/basswoodhalfroundvalance.jpg"></li>
-						<li><img id="1" src="img/bamboo150valance.jpg"></li>
-						<li><img id="1" src="img/bamboo150valance.jpg"></li>
-						<li><img id="1" src="img/bamboo150valance.jpg"></li>
-						<li><img id="1" src="img/bamboo150valance.jpg"></li>
-					</ul>
+			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prev(); return false"></a>
+			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-right" onclick="next(); return false"></a>
+			<label>Select Blind</label>
+			<div class="blinds" id="blinds">
+				<div id="blindimages" class="blindimages"> 
+					<img id="1" src="img/selected/blind1.jpg">
+					<img id="2" src="img/selected/blind2.jpg">
+					<img id="3" src="img/selected/blind3.jpg">
+					<img id="4" src="img/selected/blind4.jpg">
+					<img id="5" src="img/selected/blind5.jpg">
+					<img id="6" src="img/selected/blind6.jpg">
+					<img id="7" src="img/selected/blind7.jpg">
+					<img id="8" src="img/selected/blind8.jpg">
+					<img id="9" src="img/selected/blind9.jpg">
+					<img id="10" src="img/selected/blind10.jpg">
+					<img id="11" src="img/selected/blind11.jpg">
+					<img id="12" src="img/selected/blind12.jpg">
+					<img id="13" src="img/selected/blind13.jpg">
+					<img id="14" src="img/selected/blind14.jpg">
+					<img id="15" src="img/selected/blind15.jpg">
+					<img id="16" src="img/selected/blind16.jpg">
+					<img id="17" src="img/selected/blind17.jpg">
 				</div>
-			</section>-->
+			</div>
+			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prevBlind(); return false"></a>
+			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-right" onclick="nextBlind(); return false"></a>
 		  </div>
 
 

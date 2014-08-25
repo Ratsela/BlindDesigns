@@ -77,5 +77,28 @@ header{
 .gallery img:hover{
 	border: 1px solid #fff;
 }
+label{
+	text-align:center;
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+}
+
+
+
+.blinds{
+	width:150px;
+	height:150px;
+	margin:30px auto;
+	overflow:hidden;
+}
+.blindimages{
+	width:300px;;
+}
+.blindimages img{
+	width:150px;
+	height:150px;
+	border:2px solid #99adeb;
+	background:#42517f;
+}
 
 
