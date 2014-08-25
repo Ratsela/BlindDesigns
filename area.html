@@ -23,19 +23,7 @@
 
 		  <div data-role="main" class="ui-content">
 			<header><h3>Room Area</h3></header>
-			<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ">Select Blind</a>
-			<div data-role="popup" id="myPopup" class="myPopup">
-			  <ul data-role="listview" data-inset="true" style="min-width:250px;">
-				<li data-role="list-divider">Select Item</li>
-				<li data-role="list-divider"></li>
-				<li><a href="area.html"><img id="3" src="img/basswood.jpg"></a></li>
-				<!--<li><a href="#">Gallery</a></li>
-				<li><a href="#">Safety</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Find a Distributor</a></li>-->
-			</ul>
-			</div>
+			
 			<div id="area_image" class="area_image">
 				<div id="main_area" class="main_area">
 					<img id="1" src="img/room2.jpg">
@@ -46,6 +34,49 @@
 			</div>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prev(); return false">Previous</a>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-right" onclick="next(); return false">Next</a>
+			
+			<div class="imagelist">
+				<ul>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+					<li><img id="1" src="img/bamboo150valance.jpg" height="100px" width="100px"></li>
+				</ul>
+			</div>
+			
+			<style>
+				.imagelist ul{
+					overflow:scroll;
+					width:150px;
+					height:150px;
+					overflow-y:scroll;
+					overflow-x:scroll;
+					 display: inline-block;
+				}
+				.imagelist ul li{
+					float:left;
+					list-style:none;
+				}
+				.imagelist ul li{
+					
+					margin:5px;
+				}
+				.imagelist ul li img{
+					width:120px;
+					border:1px solid #000;
+				}
+				.imagelist ul li img:hover{
+					border:1px solid #fff;
+				}
+			</style>
+			
+			
 			<!--<header><h3>Select A Blind</h3></header>
 			<ul>
 				<li><img id="1" src="img/bamboo150valance.jpg"></li>
