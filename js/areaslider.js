@@ -1,4 +1,5 @@
 sliderInt=1;
+roomId = 1;
 count = $("#main_area >img").size();
 $(document).ready(function(){
 	$("#main_area > img#1").fadeIn(600);
@@ -9,6 +10,7 @@ function next(){
 		if(sliderInt <= count){
 			$("#main_area >img").fadeOut(600);
 			$("#main_area >img#" + sliderInt).fadeIn(600);
+			setRoomID(sliderInt);
 		}
 		else
 		{
@@ -21,8 +23,17 @@ function prev(){
 		{
 			$("#main_area >img").fadeOut(600);
 			$("#main_area >img#" + sliderInt).fadeIn(600);
+			setRoomID(sliderInt);
 		}
 		else{
 			alert("No more images");
 		}
 	}
+function setRoomID(id)
+{
+	roomId = id;
+}
+function getRoomID()
+{
+	return roomId;
+}
