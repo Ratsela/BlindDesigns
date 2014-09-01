@@ -12,8 +12,27 @@
 			function message(id)
 			{
 				var roomID = getRoomID();
+				//alert('Room '+roomID);
+				//$("#main_area >img").fadeOut(600);
+				//$("#main_area >img#44").fadeIn(600);
 				
-				switch(id){
+				
+				
+				if(roomID == 3)
+				{
+					if(id == 4)
+					{
+						$("#main_area >img").fadeOut(5);
+						$("#main_area >img#44").fadeIn(5);
+					}
+					else if(id == 2)
+					{
+						$("#main_area >img").fadeOut(5);
+						$("#main_area >img#55").fadeIn(5);
+					}
+				}
+				
+				/*switch(id){
 					case 1:
 						if(roomID == 1){
 							alert('Room '+roomID);
@@ -25,10 +44,12 @@
 							alert('Room '+roomID);
 						}
 						else if(roomID == 4){
-							alert('Room '+roomID);
+							//alert('Room '+roomID);
+							$("#main_area >img").fadeOut(600);
+							$("#main_area >img#44").fadeIn(600);
 						}
 						break;
-					case 2:
+					/*case 2:
 						if(roomID == 1){
 							alert('Room '+roomID);
 						}
@@ -39,12 +60,46 @@
 							alert('Room '+roomID);
 						}
 						else if(roomID == 4){
+							//alert('Room '+roomID);
+								$("#main_area >img").fadeOut(600);
+							$("#main_area >img#44").fadeIn(600);
+						}
+						break;
+					case 3:
+						if(roomID == 1){
 							alert('Room '+roomID);
+						}
+						else if(roomID == 2){
+							alert('Room '+roomID);
+						}
+						else if(roomID == 3){
+							alert('Room '+roomID);
+						}
+						else if(roomID == 4){
+							//alert('Room '+roomID);  
+								$("#main_area >img").fadeOut(600);
+							$("#main_area >img#44").fadeIn(600);
+						}
+						break;
+					case 4:
+						if(roomID == 1){
+							alert('Room '+roomID);
+						}
+						else if(roomID == 2){
+							alert('Room '+roomID);
+						}
+						else if(roomID == 3){
+							alert('Room '+roomID);
+						}
+						else if(roomID == 4){
+							//alert('Room '+roomID);
+							$("#main_area >img").fadeOut(600);
+							$("#main_area >img#44").fadeIn(600);
 						}
 						break;
 					default:
 						alert('Error');
-				}
+				}*/
 			}
 		</script>
 		
@@ -99,9 +154,6 @@
 				#list img:hover{
 					border:2px solid red;
 				}
-				#menu{
-					padding-left:500px;
-				}
 				
 			</style>
 			
@@ -110,8 +162,8 @@
 				<ul>
 					<li><a href="#">Blinds</a>
 						<ul id="list">
-							<li><a href="" onclick="message(1)"><img id="blind" value="1" src="img/blind1.jpg" width="100px" height="100px" border="1px solid #000"></a></li>
-							<li><a href="#" onclick="message(2)"><img id="blind" src="img/blind2.jpg" width="100px" height="100px"></a></li>
+							<li><a href="#" onclick="message(1)"><img id="blind" src="img/blind1.jpg" width="100px" height="100px"></a></li>
+							<li><a href="#" onclick="message(2)"><img id="blind" src="img/blind10.jpg" width="100px" height="100px"></a></li>
 							<li><a href="#" onclick="message(3)"><img id="blind" src="img/blind3.jpg" width="100px" height="100px"></a></li>
 							<li><a href="#" onclick="message(4)"><img id="blind" src="img/blind4.jpg" width="100px" height="100px"></a></li>
 						</ul>
@@ -120,10 +172,12 @@
 			
 			<div id="area_image" class="area_image">
 				<div id="main_area" class="main_area">
-					<img id="1" src="img/room1.jpg" value="1">
-					<img id="2" src="img/room2.jpg" value="2">
-					<img id="3" src="img/room3.jpg" value="3">
-					<img id="4" src="img/room4.jpg" value="4">
+					<img id="1" src="img/room1.jpg">
+					<img id="2" src="img/room2.jpg">
+					<img id="3" src="img/room3.jpg">
+					<img id="4" src="img/room4.jpg">
+					<img id="44" src="img/roomthree.jpg">
+					<img id="55" src="img/anotherToEdit.jpg">
 				</div>
 			</div>
 			<a href="#" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-l ui-btn-icon-left" onclick="prev(); return false"></a>
