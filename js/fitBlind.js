@@ -12,7 +12,7 @@
 					if(id == 4)
 					{
 						$("#main_area >img").fadeOut(5);
-						//$("#main_area >img#44").fadeIn(5);
+						$("#main_area >img#44").fadeIn(5);
 					}
 					else if(id == 2)
 					{
